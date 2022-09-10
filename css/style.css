@@ -113,21 +113,6 @@ nav a:hover{
     width: 560px;
     margin: 2em auto;
 }
-/* Responsive home page design */
-@media screen and (max-width: 480px){
-    .box, .main, .content-advantage, .map-content, .video{
-        width: auto;
-    }
-    h1{
-        text-align: center;
-    }
-    nav{
-        position: static;
-    }
-    .list-advantage, .img-advantage{
-        width: 100%;
-    }
-}
 
 /* Products page css */
 .products{
@@ -227,3 +212,22 @@ footer{
     margin: 20px 0 0;
 }
 
+/* Responsive home page design */
+@media screen and (max-width: 480px){
+    .box, .main, .content-advantage, .map-content, .video{
+        width: auto;
+    }
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .list-advantage, .img-advantage{
+        width: 100%;
+    }
+    .products, .products li{
+        width: auto;
+        height: auto;
+    }
+}
