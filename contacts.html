@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="box">
+            <h1><img src="img/logo.png" alt="alura barbershop logo"></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+            </nav>
+    </div>
+    </header>
+
+    <main>
+        <form>
+            <label for="name">Name: </label>
+            <input type="text" id="name" class="standard-input" required placeholder="your name">
+
+            <label for="email">Email: </label>
+            <input type="email" id="email" class="standard-input" required placeholder="your@email.com">
+
+            <label for="phone">Phone Number: </label>
+            <input type="tel" id="phone" class="standard-input" required placeholder="(00)0000-0000">
+
+            <label for="message">Message</label>
+            <textarea cols="70" rows="10" id="message" required></textarea>
+
+            <fieldset>
+                <legend>How do you prefer our contact?</legend>
+                <label for="radio-email"><input type="radio" name="contact" value="email" id="radio-email"> Email</label>
+
+                <label for="radio-phone"><input type="radio" name="contact" value="phone" id="radio-phone"> Phone</label>                
+
+                <label for="radio-whatapp"><input type="radio" name="contact" value="whatapp" id="radio-whatapp" checked> WhatApp</label>                
+            </fieldset>
+
+            <fieldset>
+                <legend>Which shift do you prefer to be attended?</legend>
+                <select>
+                    <option>Morning</option>
+                    <option>Afternoon</option>
+                    <option>Night</option>
+                </select>
+            </fieldset>
+
+            <label class="checkbox"><input type="checkbox">Would you like to receive our news via email?</label>
+            <input type="submit" value="submit" class="submit">
+        </form>
+
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Hour</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday - Friday</td>
+                        <td>8h - 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>8h - 17h</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <img src="img/logo-branco.png" alt="alura barbershop logo">
+        <p class="copyright">&copy; Copyright Alura Barbershop - 2019</p>
+    </footer>
+</body>
+</html>
